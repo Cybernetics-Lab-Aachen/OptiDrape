@@ -1,11 +1,20 @@
 
 import os, sys
 from collections import OrderedDict
-import pymesh
-import openmesh
-from openmesh import *
+
 import vispy
-import mayavi
+from openmesh import *
+import openmesh
+
+from render import render
+
+from vispy.util import transforms
+
+import matplotlib
+
+from PyQt5 import QtGui, QtOpenGL, QtWidgets
+
+import threading
 
 
 class training_data_extractor():
@@ -74,7 +83,7 @@ class training_data_extractor():
     def rebuild_mesh_from_esi(self):
 
         for mesh_key in self._mesh_dict.keys():
-            _this_mesh = PolyMesh()
+            _this_mesh = TriMesh()
             _node_dict = {}
             for node_key in self._mesh_dict[mesh_key]['node'].keys():
                 _node = [float(s) for s in self._mesh_dict[mesh_key]['node'][node_key]]
@@ -89,6 +98,25 @@ class training_data_extractor():
                                             'node': _node_dict,
                                             'shell': _shell_dict}})
 
+
+            for fh in _this_mesh.faces():
+                i = 0
+                for t in _this_mesh.fv(fh):
+                    i += 1
+                    print(i)
+                    print(_this_mesh.point(t))
+
+
+            render(_this_mesh, 'wireframe')
+
+
+
+    def save_meshes(self):
+
+        print("All Meshes extracted will be saved in the same Path.")
+        for mesh_key in self._meshes.keys():
+            print(write_mesh(self._meshes[mesh_key]['mesh'], self._path + 'atest' +'.obj'))
+
     def get_mesh(self):
         return self._meshes
 
@@ -97,13 +125,15 @@ class training_data_extractor():
 
 
 if __name__ == '__main__':
-    test = training_data_extractor(path='/home/haoming/Desktop/USB/Data/')
+    test = training_data_extractor(path='/home/haoming/Desktop/Data/')
 
     test.load_file_from_esi()
 
     test.extract_mesh_from_esi()
 
     test.rebuild_mesh_from_esi()
+
+    test.save_meshes()
 
     print(test.get_mesh())
 
