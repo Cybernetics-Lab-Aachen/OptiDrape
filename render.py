@@ -16,8 +16,8 @@ def get_file_content(filename):
 	file.close()
 	return content
 
-class Canvas(app.Canvas):
 
+class Canvas(app.Canvas):
 	def __init__(self, mesh, mode):
 		app.Canvas.__init__(self, keys='interactive')
 
@@ -61,7 +61,6 @@ class Canvas(app.Canvas):
 
 		# Calculate bounding box
 		# -----------------------------------
-
 		for vh in mesh.vertices():
 			self.min.minimize(mesh.point(vh))
 			self.max.maximize(mesh.point(vh))
@@ -70,7 +69,6 @@ class Canvas(app.Canvas):
 
 		# Calculate distance
 		# -----------------------------------
-
 		self.distance = self.default_distance()
 
 		# Set up framebuffer
@@ -82,7 +80,6 @@ class Canvas(app.Canvas):
 
 		# Set up off-screen shader
 		# -----------------------------------
-
 		vsh = get_file_content('shaders/offscreen.vsh')
 		fsh = get_file_content('shaders/offscreen.fsh')
 		self.offscreen = gloo.Program(vsh, fsh)

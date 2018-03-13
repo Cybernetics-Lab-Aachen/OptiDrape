@@ -6,13 +6,15 @@ import vispy
 from openmesh import *
 import openmesh
 
+
 from render import render
 
 from vispy.util import transforms
 
 import matplotlib
 
-from PyQt5 import QtGui, QtOpenGL, QtWidgets
+from PyQt5 import QtGui, QtWidgets
+
 
 import threading
 
@@ -22,6 +24,8 @@ class training_data_extractor():
         self._path = path
         self._mesh_format = '.pc'
         self._shear_format = '.asc'
+
+        self._general_format = '.asc'
 
         self._file_dict = {'mesh':{}, 'shear':{}}
 
@@ -57,6 +61,16 @@ class training_data_extractor():
         except FileNotFoundError:
             print("Error: Invalid path!")
 
+
+    def load_file_from_esi_2(self):
+        # because each folder do has sub folder an, so make a iteration of all of them
+        
+        while True:
+            pass
+
+
+
+
     def extract_mesh_from_esi(self):
         for mesh_file in self._file_dict['mesh'].keys():
             _lines = []
@@ -84,6 +98,10 @@ class training_data_extractor():
 
         for mesh_key in self._mesh_dict.keys():
             _this_mesh = TriMesh()
+            _this_mesh.request_vertex_normals()
+            _this_mesh.request_vertex_texcoords2D()
+            _this_mesh.request_face_normals()
+            _this_mesh.request_vertex_colors()
             _node_dict = {}
             for node_key in self._mesh_dict[mesh_key]['node'].keys():
                 _node = [float(s) for s in self._mesh_dict[mesh_key]['node'][node_key]]
@@ -98,18 +116,15 @@ class training_data_extractor():
                                             'node': _node_dict,
                                             'shell': _shell_dict}})
 
+            _this_mesh.update_vertex_normals()
+            _this_mesh.update_face_normals()
 
             for fh in _this_mesh.faces():
-                i = 0
-                for t in _this_mesh.fv(fh):
-                    i += 1
-                    print(i)
-                    print(_this_mesh.point(t))
+                for vh in _this_mesh.fv(fh):
+                    print(_this_mesh.color(vh)[1])
+                #print(_this_mesh.normal(fh)[0], _this_mesh.normal(fh)[1], _this_mesh.normal(fh)[2])
 
-
-            render(_this_mesh, 'wireframe')
-
-
+                #break
 
     def save_meshes(self):
 
