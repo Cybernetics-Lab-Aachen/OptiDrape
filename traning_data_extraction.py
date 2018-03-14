@@ -27,7 +27,7 @@ class training_data_extractor():
 
         self._general_format = '.asc'
 
-        self._file_dict = {'mesh':{}, 'shear':{}}
+        self._file_dict = dict()
 
         self._mesh_dict = {}
 
@@ -41,6 +41,7 @@ class training_data_extractor():
             self._shear_format = shear
 
     def load_file_from_esi(self):
+        self._file_dict = {'mesh': {}, 'shear': {}}
         try:
             _all_file = os.listdir(self._path)
             _file_counter = [0, 0]
@@ -61,15 +62,41 @@ class training_data_extractor():
         except FileNotFoundError:
             print("Error: Invalid path!")
 
-
-    def load_file_from_esi_2(self):
+    def load_and_extract_file_from_esi(self):
         # because each folder do has sub folder an, so make a iteration of all of them
-        
-        while True:
-            pass
+        for d in os.walk(self._path):
+            if d[2]:
+                _sub_dirs = [s for s in d[0].split("/") if s not in self._path.split("/")]
 
+                if _sub_dirs[0] not in self._file_dict.keys():
+                    self._file_dict.update({_sub_dirs[0]: dict()})
 
+                if _sub_dirs[1] not in self._file_dict[_sub_dirs[0]].keys():
+                    self._file_dict[_sub_dirs[0]].update({_sub_dirs[1]: dict()})
 
+                if _sub_dirs[2] not in self._file_dict[_sub_dirs[0]][_sub_dirs[1]].keys():
+                    self._file_dict[_sub_dirs[0]][_sub_dirs[1]].update({_sub_dirs[2]: dict()})
+
+                for file in d[2]:
+                    if '.asc' in file:
+                        _began_read_line = False
+                        with open(d[0] + '/' + file, 'r') as this_file:
+                            _lines = this_file.readlines()
+                            for line in _lines:
+                                _line = [s for s in line.split(' ') if s is not '']
+                                if _began_read_line:
+                                    try:
+                                        if _line[0] not in self._file_dict[_sub_dirs[0]][_sub_dirs[1]][_sub_dirs[2]].keys():
+                                            # print(_line)
+                                            self._file_dict[_sub_dirs[0]][_sub_dirs[1]][_sub_dirs[2]].update(
+                                                {_line[0]: {file.replace('.asc', ''): float(_line[1])}})
+                                        else:
+                                            self._file_dict[_sub_dirs[0]][_sub_dirs[1]][_sub_dirs[2]][_line[0]].update(
+                                                {file.replace('.asc', ''): float(_line[1])})
+                                    except IndexError:
+                                        pass
+                                if all(s in _line for s in ['Number']):
+                                    _began_read_line = True
 
     def extract_mesh_from_esi(self):
         for mesh_file in self._file_dict['mesh'].keys():
@@ -80,7 +107,6 @@ class training_data_extractor():
 
             with open(self._path + self._file_dict['mesh'][mesh_file]) as mesh:
                 _lines = mesh.readlines()
-
             for _line in _lines:
                 _split_list = [s for s in _line.split(' ') if s is not '']
 
