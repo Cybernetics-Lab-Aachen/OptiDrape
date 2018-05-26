@@ -12,8 +12,11 @@ a.split("a")
 
 
 file_dict = dict()
+from pprint import pprint
+
 
 for d in dirs:
+    pprint(d)
     if d[2]:
         _sub_dirs = [s for s in d[0].split("/") if s not in t.split("/")]
 
@@ -47,7 +50,7 @@ for d in dirs:
                             _began_read_line = True
 
 
-print(file_dict)
+#print(file_dict)
 
 
 

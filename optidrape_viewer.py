@@ -15,6 +15,8 @@ from OpenGL.arrays import vbo
 import math, time, sys
 import numpy as np
 
+import data_extraction
+
 
 TRACKBALLradius = 0.6
 
@@ -908,7 +910,7 @@ class MeshViewerWidgetT(QGLViewerWidget):
 
 
 if __name__ == '__main__':
-    app = QApplication(sys.argv)
+
 
     opt = openmesh.Options()
 
@@ -923,18 +925,48 @@ if __name__ == '__main__':
     test_mesh = openmesh.TriMesh()
 
 
-    openmesh.read_mesh(test_mesh, '/home/haoming/Desktop/Data/atest.obj', opt)
+    openmesh.read_mesh(test_mesh, '/home/haoming/Desktop/Data/Elipsenstumpf.obj', opt)
+
+    mesh_extractor = data_extraction.training_data_extractor(path='/home/haoming/Desktop/Data/new_data')
+
+    mesh_extractor.load_and_extract_file_from_esi()
+
+    _meshes = mesh_extractor.get_mesh()
 
     test_mesh.request_face_normals()
     test_mesh.request_face_colors()
     test_mesh.request_vertex_normals()
     test_mesh.request_vertex_colors()
     test_mesh.request_vertex_texcoords2D()
+    app = QApplication(sys.argv)
 
     mainWin = QMainWindow(flags=Qt.WindowCloseButtonHint | Qt.WindowMinimizeButtonHint)
+    #mainWin = QMainWindow(flags=Qt.WindowCloseButtonHint | Qt.WindowMinimizeButtonHint)
+    _main_widget = QWidget()
+    _layout = QHBoxLayout()
 
+    for mesh_key in _meshes.keys():
+        _this_Widget = QWidget()
+        _this_Label = QLabel(mesh_key)
+        _this_Label.resize(5, 5)
+        _this_layout = QVBoxLayout()
+        _this_spacer = QSpacerItem(0, 20, QSizePolicy.Ignored, QSizePolicy.MinimumExpanding)
+        w = MeshViewerWidgetT(parent=_this_Widget)
+        w.set_mesh(_meshes[mesh_key], _opt)
+        _this_layout.addWidget(_this_Label)
+        _this_layout.addSpacerItem(_this_spacer)
+        _this_layout.addWidget(w)
+        _this_layout.removeItem(_this_spacer)
+        _this_Widget.setLayout(_this_layout)
+        _layout.addWidget(_this_Widget)
+
+    _main_widget.setLayout(_layout)
+
+    mainWin.setCentralWidget(_main_widget)
+    mainWin.resize(640, 480*3)
+    mainWin.show()
     #mainWiget = QWidget()
-    w = MeshViewerWidgetT(parent=mainWin)
+    #w = MeshViewerWidgetT(parent=mainWin)
 
     #opt += openmesh.Options.FaceColor
     opt += openmesh.Options.FaceNormal
@@ -942,17 +974,17 @@ if __name__ == '__main__':
     opt += openmesh.Options.VertexNormal
     #opt += openmesh.Options.VertexTexCoord
     opt += openmesh.Options.FaceTexCoord
-    w.set_mesh(test_mesh, _opt)
+    #w.set_mesh(test_mesh, _opt)
 
     #w.show()
-    mainWin.setCentralWidget(w)
+    #mainWin.setCentralWidget(w)
     #w.show()
-    mainWin.resize(640, 480)
-    mainWin.show()
-
-
-
+    #mainWin.resize(640, 480)
+    #mainWin.show()
     sys.exit(app.exec_())
+
+
+
 
 
 

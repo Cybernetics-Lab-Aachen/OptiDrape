@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/optidrape_viewer.py" line="795" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/optidrape_viewer.py" line="797" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69fa1f1a-fc79-494a-bb25-7086a03a41e2" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/OptiDrape.iml" afterPath="$PROJECT_DIR$/.idea/OptiDrape.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
-      <change beforePath="$PROJECT_DIR$/traning_data_extraction.py" afterPath="$PROJECT_DIR$/traning_data_extraction.py" />
+      <change afterPath="$PROJECT_DIR$/ga.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optidrape_viewer.py" beforeDir="false" afterPath="$PROJECT_DIR$/optidrape_viewer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traning_data_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_extraction.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,44 +19,31 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/OptiDrape$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1511362336228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
-    <SUITE FILE_PATH="coverage/OptiDrape$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1511192275496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/OptiDrape$odga.coverage" NAME="odga Coverage Results" MODIFIED="1511537563199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/OptiDrape$shared_context.coverage" NAME="shared_context Coverage Results" MODIFIED="1507812139864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../vispy/examples/tutorial/app" />
     <SUITE FILE_PATH="coverage/OptiDrape$test.coverage" NAME="test Coverage Results" MODIFIED="1521043262374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OptiDrape$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1511192275496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OptiDrape$shared_context.coverage" NAME="shared_context Coverage Results" MODIFIED="1507812139864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../vispy/examples/tutorial/app" />
     <SUITE FILE_PATH="coverage/OptiDrape$openmesh_viewer.coverage" NAME="openmesh_viewer Coverage Results" MODIFIED="1517521265493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/OptiDrape$traning_data_extraction.coverage" NAME="traning_data_extraction Coverage Results" MODIFIED="1517521288501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OptiDrape$odga.coverage" NAME="odga Coverage Results" MODIFIED="1511537563199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OptiDrape$traning_data_extraction.coverage" NAME="traning_data_extraction Coverage Results" MODIFIED="1527178996936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OptiDrape$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1511362336228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="traning_data_extraction.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/traning_data_extraction.py">
+      <file leaf-file-name="data_extraction.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data_extraction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="134" column="75" lean-forward="false" selection-start-line="134" selection-start-column="67" selection-end-line="134" selection-end-column="75" />
+            <state relative-caret-position="310">
+              <caret line="157" selection-start-line="157" selection-end-line="157" />
               <folding>
                 <element signature="e#1#15#0" expanded="true" />
+                <element signature="e#1017#1855#0" />
+                <element signature="e#7173#7973#0" />
+                <element signature="e#8020#9439#0" />
+                <element signature="e#9491#9495#0" />
+                <element signature="e#9532#9730#0" />
+                <element signature="e#9764#9783#0" />
+                <element signature="e#9822#9844#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="render.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/render.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="64" column="20" lean-forward="false" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -64,56 +51,45 @@
       <file leaf-file-name="optidrape_viewer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/optidrape_viewer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state>
+              <caret line="18" selection-start-line="18" selection-end-line="19" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
-                <element signature="e#443#1712#0" expanded="false" />
-                <element signature="e#1756#2206#0" expanded="false" />
-                <element signature="e#2247#3158#0" expanded="false" />
-                <element signature="e#3196#3811#0" expanded="false" />
-                <element signature="e#3851#3935#0" expanded="false" />
-                <element signature="e#3968#4340#0" expanded="false" />
-                <element signature="e#4387#4768#0" expanded="false" />
-                <element signature="e#4816#5094#0" expanded="false" />
-                <element signature="e#5141#7663#0" expanded="false" />
-                <element signature="e#7713#7740#0" expanded="false" />
-                <element signature="e#7783#7920#0" expanded="false" />
-                <element signature="e#7966#9185#0" expanded="false" />
-                <element signature="e#9227#9434#0" expanded="false" />
-                <element signature="e#9480#10539#0" expanded="false" />
-                <element signature="e#10588#10989#0" expanded="false" />
-                <element signature="e#11039#11321#0" expanded="false" />
-                <element signature="e#11355#12341#0" expanded="false" />
-                <element signature="e#12393#12593#0" expanded="false" />
-                <element signature="e#12638#12969#0" expanded="false" />
-                <element signature="e#13015#13096#0" expanded="false" />
-                <element signature="e#13139#13772#0" expanded="false" />
-                <element signature="e#13814#13854#0" expanded="false" />
-                <element signature="e#13896#14072#0" expanded="false" />
-                <element signature="e#14116#14190#0" expanded="false" />
-                <element signature="e#14227#14973#0" expanded="false" />
-                <element signature="e#15011#15971#0" expanded="false" />
-                <element signature="e#16014#16229#0" expanded="false" />
-                <element signature="e#16483#33291#0" expanded="false" />
-                <element signature="e#21396#22515#0" expanded="false" />
-                <element signature="e#22560#24157#0" expanded="false" />
-                <element signature="e#24208#28708#0" expanded="false" />
-                <element signature="e#28755#30951#0" expanded="false" />
-                <element signature="e#30994#31015#0" expanded="false" />
-                <element signature="e#31061#33291#0" expanded="false" />
-                <element signature="e#33325#34527#0" expanded="false" />
+                <element signature="e#467#1736#0" />
+                <element signature="e#1780#2230#0" />
+                <element signature="e#2271#3182#0" />
+                <element signature="e#3220#3835#0" />
+                <element signature="e#3875#3959#0" />
+                <element signature="e#3992#4364#0" />
+                <element signature="e#4411#4792#0" />
+                <element signature="e#4840#5118#0" />
+                <element signature="e#5165#7687#0" />
+                <element signature="e#7737#7764#0" />
+                <element signature="e#7807#7944#0" />
+                <element signature="e#7990#9209#0" />
+                <element signature="e#9251#9458#0" />
+                <element signature="e#9504#10563#0" />
+                <element signature="e#10612#11013#0" />
+                <element signature="e#11063#11345#0" />
+                <element signature="e#11379#12365#0" />
+                <element signature="e#12417#12617#0" />
+                <element signature="e#12662#12993#0" />
+                <element signature="e#13039#13120#0" />
+                <element signature="e#13163#13796#0" />
+                <element signature="e#13838#13878#0" />
+                <element signature="e#13920#14096#0" />
+                <element signature="e#14140#14214#0" />
+                <element signature="e#14251#14997#0" />
+                <element signature="e#15035#15995#0" />
+                <element signature="e#16038#16253#0" />
+                <element signature="e#16507#33315#0" />
+                <element signature="e#21420#22539#0" />
+                <element signature="e#22584#24181#0" />
+                <element signature="e#24232#28732#0" />
+                <element signature="e#28779#30975#0" />
+                <element signature="e#31018#31039#0" />
+                <element signature="e#31085#33315#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="odga.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/odga.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -129,8 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>return</find>
-      <find>popup_menu</find>
       <find>_draw_mode_names</find>
       <find>property</find>
       <find>_radius</find>
@@ -159,6 +133,8 @@
       <find>print</find>
       <find>self.updateGL</find>
       <find>openmesh</find>
+      <find>limit</find>
+      <find>insert_one</find>
     </findStrings>
     <replaceStrings>
       <replace>center</replace>
@@ -181,8 +157,11 @@
         <option value="/usr/local/lib/python3.5/dist-packages/OpenGL/arrays/vbo.py" />
         <option value="$PROJECT_DIR$/odga.py" />
         <option value="$PROJECT_DIR$/openmesh_viewer.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/traning_data_extraction.py" />
+        <option value="$PROJECT_DIR$/optidrape_viewer.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/ga.py" />
+        <option value="$PROJECT_DIR$/data_extraction.py" />
       </list>
     </option>
   </component>
@@ -192,31 +171,24 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="400" />
-    <option name="y" value="22" />
-    <option name="width" value="1391" />
-    <option name="height" value="784" />
+    <option name="x" value="2001" />
+    <option name="y" value="-5" />
+    <option name="width" value="920" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,13 +200,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -248,8 +219,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.traning_data_extraction">
     <configuration name="odga" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="OptiDrape" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -260,8 +232,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="OptiDrape" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/odga.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -269,6 +240,7 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="openmesh_viewer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="OptiDrape" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -279,8 +251,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="OptiDrape" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/optidrape_viewer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -288,6 +259,7 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="OptiDrape" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -298,8 +270,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="OptiDrape" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -307,6 +278,7 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="OptiDrape" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -317,8 +289,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="OptiDrape" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.idea/test3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -326,6 +297,7 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="traning_data_extraction" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="OptiDrape" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -336,33 +308,29 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="OptiDrape" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/traning_data_extraction.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_extraction.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.traning_data_extraction" />
-      <item index="1" class="java.lang.String" itemvalue="Python.openmesh_viewer" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test3" />
-      <item index="3" class="java.lang.String" itemvalue="Python.odga" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test" />
+    <list>
+      <item itemvalue="Python.traning_data_extraction" />
+      <item itemvalue="Python.openmesh_viewer" />
+      <item itemvalue="Python.test3" />
+      <item itemvalue="Python.odga" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.openmesh_viewer" />
-        <item index="2" class="java.lang.String" itemvalue="Python.traning_data_extraction" />
-        <item index="3" class="java.lang.String" itemvalue="Python.odga" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test3" />
+      <list>
+        <item itemvalue="Python.traning_data_extraction" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.openmesh_viewer" />
+        <item itemvalue="Python.odga" />
+        <item itemvalue="Python.test3" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -393,32 +361,33 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="2001" y="-5" width="1839" height="1085" extended-state="6" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21097046" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21165644" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27978438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42740285" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2495356" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32911393" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.21097046" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2407211" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27079934" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42740285" />
+      <window_info anchor="right" id="R Packages" order="3" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2495356" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" weight="0.32911393" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,31 +414,20 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/vispy-0.5.0.dev0-py3.5.egg/vispy/scene/canvas.py" />
-    <entry file="file://$PROJECT_DIR$/../vispy/examples/tutorial/app/shared_context.py" />
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/pyface/qt/QtCore.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-2066100795/pymesh/__init__.py" />
-    <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/vispy-0.5.0.dev0-py3.5.egg/vispy/__init__.py" />
-    <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/vispy-0.5.0.dev0-py3.5.egg/vispy/util/transforms.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1247971764/PyQt5/QtCore/QCoreApplication.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1247971764/PyQt5/QtGui/QMouseEvent.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1247971764/builtins.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1247971764/PyQt5/QtWidgets/QWidget.py" />
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/OpenGL/GL/images.py" />
     <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1247971764/PyQt5/QtWidgets/QActionGroup.py" />
     <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1247971764/openmesh/FaceIter.py" />
     <entry file="file:///usr/local/lib/python3.5/dist-packages/OpenGL/raw/GL/_types.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="1598" column="0" lean-forward="false" selection-start-line="1598" selection-start-column="0" selection-end-line="1598" selection-end-column="0" />
+          <caret line="1598" selection-start-line="1598" selection-end-line="1598" />
         </state>
       </provider>
     </entry>
@@ -478,7 +436,7 @@
     <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
@@ -502,7 +460,7 @@
     <entry file="file://$PROJECT_DIR$/.idea/test3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
-          <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -516,87 +474,158 @@
     <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/-2066100795/openmesh/__init__.py" />
     <entry file="file://$PROJECT_DIR$/odga.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test2.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/-1247971764/openmesh/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="39" column="14" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="117">
+          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/render.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="64" column="20" lean-forward="false" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="854">
+          <caret line="64" column="20" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/-1247971764/openmesh/TriMesh.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38196">
+          <caret line="2122" column="4" selection-start-line="2122" selection-start-column="4" selection-end-line="2122" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/-1247971764/PyQt5/QtWidgets/QBoxLayout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/-1247971764/PyQt5/QtWidgets/QWidget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10602">
+          <caret line="590" column="8" selection-start-line="590" selection-start-column="8" selection-end-line="590" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/optidrape_viewer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state>
+          <caret line="18" selection-start-line="18" selection-end-line="19" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#443#1712#0" expanded="false" />
-            <element signature="e#1756#2206#0" expanded="false" />
-            <element signature="e#2247#3158#0" expanded="false" />
-            <element signature="e#3196#3811#0" expanded="false" />
-            <element signature="e#3851#3935#0" expanded="false" />
-            <element signature="e#3968#4340#0" expanded="false" />
-            <element signature="e#4387#4768#0" expanded="false" />
-            <element signature="e#4816#5094#0" expanded="false" />
-            <element signature="e#5141#7663#0" expanded="false" />
-            <element signature="e#7713#7740#0" expanded="false" />
-            <element signature="e#7783#7920#0" expanded="false" />
-            <element signature="e#7966#9185#0" expanded="false" />
-            <element signature="e#9227#9434#0" expanded="false" />
-            <element signature="e#9480#10539#0" expanded="false" />
-            <element signature="e#10588#10989#0" expanded="false" />
-            <element signature="e#11039#11321#0" expanded="false" />
-            <element signature="e#11355#12341#0" expanded="false" />
-            <element signature="e#12393#12593#0" expanded="false" />
-            <element signature="e#12638#12969#0" expanded="false" />
-            <element signature="e#13015#13096#0" expanded="false" />
-            <element signature="e#13139#13772#0" expanded="false" />
-            <element signature="e#13814#13854#0" expanded="false" />
-            <element signature="e#13896#14072#0" expanded="false" />
-            <element signature="e#14116#14190#0" expanded="false" />
-            <element signature="e#14227#14973#0" expanded="false" />
-            <element signature="e#15011#15971#0" expanded="false" />
-            <element signature="e#16014#16229#0" expanded="false" />
-            <element signature="e#16483#33291#0" expanded="false" />
-            <element signature="e#21396#22515#0" expanded="false" />
-            <element signature="e#22560#24157#0" expanded="false" />
-            <element signature="e#24208#28708#0" expanded="false" />
-            <element signature="e#28755#30951#0" expanded="false" />
-            <element signature="e#30994#31015#0" expanded="false" />
-            <element signature="e#31061#33291#0" expanded="false" />
-            <element signature="e#33325#34527#0" expanded="false" />
+            <element signature="e#467#1736#0" />
+            <element signature="e#1780#2230#0" />
+            <element signature="e#2271#3182#0" />
+            <element signature="e#3220#3835#0" />
+            <element signature="e#3875#3959#0" />
+            <element signature="e#3992#4364#0" />
+            <element signature="e#4411#4792#0" />
+            <element signature="e#4840#5118#0" />
+            <element signature="e#5165#7687#0" />
+            <element signature="e#7737#7764#0" />
+            <element signature="e#7807#7944#0" />
+            <element signature="e#7990#9209#0" />
+            <element signature="e#9251#9458#0" />
+            <element signature="e#9504#10563#0" />
+            <element signature="e#10612#11013#0" />
+            <element signature="e#11063#11345#0" />
+            <element signature="e#11379#12365#0" />
+            <element signature="e#12417#12617#0" />
+            <element signature="e#12662#12993#0" />
+            <element signature="e#13039#13120#0" />
+            <element signature="e#13163#13796#0" />
+            <element signature="e#13838#13878#0" />
+            <element signature="e#13920#14096#0" />
+            <element signature="e#14140#14214#0" />
+            <element signature="e#14251#14997#0" />
+            <element signature="e#15035#15995#0" />
+            <element signature="e#16038#16253#0" />
+            <element signature="e#16507#33315#0" />
+            <element signature="e#21420#22539#0" />
+            <element signature="e#22584#24181#0" />
+            <element signature="e#24232#28732#0" />
+            <element signature="e#28779#30975#0" />
+            <element signature="e#31018#31039#0" />
+            <element signature="e#31085#33315#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.5/pprint.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="216">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/traning_data_extraction.py">
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/pymongo/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="134" column="75" lean-forward="false" selection-start-line="134" selection-start-column="67" selection-end-line="134" selection-end-column="75" />
+        <state relative-caret-position="134">
+          <caret line="775" column="55" selection-start-line="775" selection-start-column="55" selection-end-line="775" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/h5py/_hl/datatype.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-113">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/h5py/highlevel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/pymongo/collection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="637" column="8" selection-start-line="637" selection-start-column="8" selection-end-line="637" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ga.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_extraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
           <folding>
             <element signature="e#1#15#0" expanded="true" />
+            <element signature="e#1017#1855#0" />
+            <element signature="e#7173#7973#0" />
+            <element signature="e#8020#9439#0" />
+            <element signature="e#9491#9495#0" />
+            <element signature="e#9532#9730#0" />
+            <element signature="e#9764#9783#0" />
+            <element signature="e#9822#9844#0" />
           </folding>
         </state>
       </provider>
