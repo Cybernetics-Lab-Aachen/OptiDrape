@@ -1,6 +1,6 @@
 # OptiDrape Tool:
 ![alt text](https://github.com/Cybernetics-Lab-Aachen/OptiDrape/raw/optidrape/Logo_OptiDrape_without.png "Logo Title Text 1")
-## Welcome to the GitHub Page of project [OptiDrape](www.optidrape.de)
+## Welcome to the GitHub Page of project [OptiDrape](http://www.optidrape.de)
 
 ### Dependencies
 1. Python 3.5+
